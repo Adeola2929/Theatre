@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from database import get_db
 import schema
-import services.ticket_service as ticket_service
+from services import ticket_service
 from typing import List
 
 ticket_router = APIRouter(prefix="/tickets", tags=["Tickets"])
